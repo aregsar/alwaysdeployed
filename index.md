@@ -1,1 +1,1 @@
-# hello world
+# Always Deployed Manifesto
