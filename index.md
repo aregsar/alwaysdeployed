@@ -10,7 +10,7 @@ Below are the three priciples of the Always deployed Manifesto:
 
 ## 1- Application code should be deployed from day one
 
-Projects should always be started by creating a new hello world project and committed into the master repository branch. The master branch should immediatly be deployed to the secure production environment.
+Projects should always be started by creating a new hello world project and committed into the master repository branch. The master branch should immediatly be deployed to a secure production environment.
 
 ## 2- Deployed code should be monitored from day one
 
