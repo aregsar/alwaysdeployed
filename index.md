@@ -19,7 +19,7 @@ An Always Deployed application is not considerd deployed if it can't be monitore
 
 ## 3- Small Incremental changes should be continuously deployed to production
 
-Application features should always be developed incrementally using [Endpoint Driven Development](https://endpoint-driven-Development), with each endpoint optionally hidden under a feature flag.
+Application features should always be developed incrementally using [Endpoint Driven Development](https://alwaysdeployed.com/endpoint-driven-development), with each endpoint optionally hidden under a feature flag.
 
 Once the endpoint functionality is complete and the endpoint passes all endpoint tests it should be integrated into the master branch using [Trunk based developonent](https://trunkbaseddevelopment.com/).
 The new version of the master branch should immediatly be deployed to the secure production environment.
