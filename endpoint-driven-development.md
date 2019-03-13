@@ -1,12 +1,10 @@
 # Endpoint Driven Development
 
-Endpoint Driven Development is a methodology of web application development that enables granular feature functionality to be continiously integrated into a production application.
+Endpoint Driven Development is a methodology of web application development that enables granular feature functionality to be continuously integrated into a production application.
 
 In Endpoint driven development an application is represented by a set of independant endpoints. Each endpoint represents a quantum of independant functionality that is aggregated with the rest of the endpoints to provide the full functionality of the application.
 
-Endpoint driven development works best with REST and RPC style server side rendered web applications and web APIs.
-
-Variations of this methodlogy can be adapted to single endpoint web technologies such as GraphQL endpoints and WebSocket endpoints and adapted to client side applications and Single Page Applications.
+The essence of endpoint driven development is that a user action triggers a request to an endpoint that performs some function and returns a response to a user. That chain of events can be encapsulated as an atomic unit of a feature and developed, tested and deployed independently. Furthermore development process of an independant endpoint meshes well with lean development practices and Kanban.
 
 ## What constitutes an Endpoint
 
@@ -46,24 +44,27 @@ a stand alone single endpoint feature.
 
 - Server side events that trigger realtime push notifications are considered side effects of handling an endpoint request.
 
-## Special cases of Endpoint Driven Development
+## Client side development - SPAs and Javascript Widgets
 
-- Rich clients, Embedded Javascript Widgets and Single Page Applications
+Endpoint driven development applies directly with REST and RPC style server side rendered web applications and web APIs.
 
 Client side development is inherently more complex and does not completely lend
 itself to standard endpoint driven development principles.
-The development process for client side applications can be formalized under [Action Driven Development](https://alwaysdeployed/) that is similar in principal to endpoint driven development with each UI action representing a psudo endpoint.
 
-- Websocket endpoints
+An endpoint request is a special case of an UI action, triggered by, navigating to a URL, clicking a link, submitting a form or clicking an button that posts an Ajax request to an endpoint.
+
+The development process for client side applications can be formalized under [Action Driven Development](https://alwaysdeployed.com/action-driven-development/) that is a superset of Endpoint Driven development, which is better suited to client side applications and SPAs, where each UI action representing a psudo endpoint.
+
+## Websocket endpoints
 
 Realtime WebSockets use a single endpoint to process channel\event requests  
 Therefore realtime endpoint development does not lend itself to standard endpoint driven development principles.
 So instead a psudo endpoint is defined based on the channel\event request message schema.
-The WebSocket development process can be formalized using [Schema Driven Development](https://alwaysdeployed/).
+The WebSocket development process can be formalized using [Schema Driven Development](https://alwaysdeployed.com/schema-driven-development/).
 
-- GraphQL endpoints
+## GraphQL endpoints
 
 GraphQL uses a single endpoint to process query\mutation requests.
 Therefore GrapQL endpoint development does not lend itself to standard endpoint driven development principles.
 So instead a psudo endpoint is defined based on the query\mutation request message schema.
-The GraphQL development process can be formalized using [Schema Driven Development](https://alwaysdeployed/).
+The GraphQL development process can be formalized using [Schema Driven Development](https://alwaysdeployed.com/schema-driven-development/).
