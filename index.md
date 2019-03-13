@@ -8,16 +8,16 @@ The Always deployed Manifesto adops the principle of [No Estimates](https://ronj
 
 Below are the three priciples of the Always deployed Manifesto:
 
-## 1- Application code should be deployed from day one
+## Application code should be deployed from day one
 
 Projects should always be started by creating a new hello world project and committed into the master repository branch. The master branch should immediatly be deployed to a secure production environment.
 
-## 2- Deployed code should be monitored from day one
+## Deployed code should be monitored from day one
 
 The deployed version of an application should include health check monitoring, error reporting, application metrics and logging starting from day one.
 An Always Deployed application is not considerd deployed if it can't be monitored.
 
-## 3- Small Incremental changes should be continuously deployed to production
+## Small Incremental changes should be continuously deployed to production
 
 Application features should always be developed incrementally using [Endpoint Driven Development](https://alwaysdeployed.com/endpoint-driven-development), with each endpoint controlled by a feature toggle.
 
