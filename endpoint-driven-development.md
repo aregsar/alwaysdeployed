@@ -1,65 +1,69 @@
 # Endpoint Driven Development
 
+Endpoint Driven Development is a methodology of web application development that enables granular feature functionality to be continiously integrated into a production application.
 
-## In order to understand what is Endpoint Driven Development
-it helps to define an endpoint by the following definitions:
+In Endpoint driven development an application is represented by a set of independant endpoints. Each endpoint represents a quantum of independant functionality that is aggregated with the rest of the endpoints to provide the full functionality of the application.
 
--An endpoint corresponts to a URI that responds to an Http request with a
+Endpoint driven development works best with REST and RPC style server side rendered web applications and web APIs.
+
+Variations of this methodlogy can be adapted to single endpoint web technologies such as GraphQL endpoints and WebSocket endpoints and adapted to client side applications and Single Page Applications.
+
+## What constitutes an Endpoint
+
+It helps to define an endpoint using the following definitions:
+
+- An endpoint corresponds to a URI that responds to an Http request with a
 specific Http Verb.
 
--Each endpoint is a sub component of a feature, a microfeature.
+- An endpoint responds to an Http request with a Http response and can possibly produce side effects as a consequence of the request.
 
--A feature is is an aggreagation of multiple endpoints
+- An aplication feature is is an aggreagation of multiple endpoints.
 
+- Each endpoint is a sub component of a feature that we can call a sub feature.
 
-## Now that we have defined what an endpoint is, we can declare
-the Endpoint Driven Development principles:
+## The principles of Endpoint Driven Development
 
-1-a specific handler or action is assoicated to single endpoint and will respond
+- A specific handler or action is assoicated to single endpoint that will respond
 to an Http request by producing a HttpResponse and possibly produces one or more
-side effects such as updating a database, sending an email or adding a job to a queue
+side effects such as updating a database, sending an email, adding a job to a queue or sending a websocket notification.
 
-2-each endpoint is verified and guarded by a suit of endpoint tests that send Http requests
-to the specific endpoint and validate responses and side effects.
+- Each endpoint is verified and guarded by a suit of endpoint tests that send Http requests to the specific endpoint and validate responses and side effects.
 
-3-Each endpoint is developed and deployed independantly and optionally guarded
-by a feature flag
+- Each endpoint is developed and deployed independantly, optionally disabled
+by a feature toggle
 
-4-Once all endpoints of a feature are deployed the corresponding feature flag
-for the feature is removed
+- Once all endpoints of a feature are deployed the corresponding feature toggle
+for the feature can be removed. Feature toggles are per feature so multiple endpoints can be deployed under the same feature toggle.
 
-5-Any changes to endpoint will result in a completely new version of the endpoint
-(immutable endpoints) developed using the previous principles and guarded by a feature
-change flag. After the the new version is deployed
-the feature change flag and the old version of the endpoint will be removed.
+- Any changes to an endpoint will result in a completely new version of the endpoint
+(immutable endpoints) developed using the previous principles and the versions can be switched by a feature change toggle. After the the new version is deployed
+the feature change toggle and the old version of the endpoint can be removed.
 
-6-Client side Ajax requests to an endpoint are part of a separate endpoint and not a part of
-the reponse of another endpoint that included the Ajax client code.
+- Client side Ajax requests to an endpoint are part of a separate endpoint request and not a part of the reponse of another endpoint. So for example a request to an endpoint that returns a Html page is considered separate from the request to an endpoint that an Ajax form on that page makes to submit the form.
 
-7-Any middleware is considered a common endpoint and will be developed as
-a stand alone endpoint.
+- Any middleware is considered a common endpoint and will be developed as
+a stand alone single endpoint feature.
 
-8-Server side events that trigger realtime push notifications are considered side effects of handling an endpoint request.
+- Server side events that trigger realtime push notifications are considered side effects of handling an endpoint request.
 
-## Special cases in Endpoint Driven Development
+## Special cases of Endpoint Driven Development
 
--Realtime endpoints
+- Rich clients, Embedded Javascript Widgets and Single Page Applications
 
-Realtime websocket endpoints use a single endpoint through which messages are exchanged based on the request message schema.
-Therefore realtime endpoint development does not lend itself to endpoint driven development.
-The reatime development process can be formalized using schema driven development.
+Client side development is inherently more complex and does not completely lend
+itself to standard endpoint driven development principles.
+The development process for client side applications can be formalized under [Action Driven Development](https://alwaysdeployed/) that is similar in principal to endpoint driven development with each UI action representing a psudo endpoint.
 
--GraphQL endpoints
+- Websocket endpoints
 
-GraphQL endpoints use a single endpoint to service data queries and mutations based on the request message schema. 
-Therefore GrapQL endpoint development does not lend itself to endpoint driven development.
-The GraphQL development process can be formalized using schema driven development.
+Realtime WebSockets use a single endpoint to process channel\event requests  
+Therefore realtime endpoint development does not lend itself to standard endpoint driven development principles.
+So instead a psudo endpoint is defined based on the channel\event request message schema.
+The WebSocket development process can be formalized using [Schema Driven Development](https://alwaysdeployed/).
 
+- GraphQL endpoints
 
--Client side development
-
-Client side development is inherently more complex and do not completely lend
-themselved to endpoint driven development.
-Their development process can be formalized under action driven development that
-is similar in principal to endpoint driven development and is a work in progress.
-
+GraphQL uses a single endpoint to process query\mutation requests.
+Therefore GrapQL endpoint development does not lend itself to standard endpoint driven development principles.
+So instead a psudo endpoint is defined based on the query\mutation request message schema.
+The GraphQL development process can be formalized using [Schema Driven Development](https://alwaysdeployed/).

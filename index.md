@@ -1,6 +1,6 @@
 # Always Deployed manifesto
 
-The Always Deployed manifesto defines a process of software development that helps development teams provide continuous value to customers from day one of a software project.
+The Always Deployed manifesto defines a process of web software development that helps development teams provide continuous value to customers from day one of a software project.
 
 Furthermore it helps make the development process transparent to all stakeholders by providing continuous observabilty into the state of the application, starting from day one.
 
@@ -19,7 +19,7 @@ An Always Deployed application is not considerd deployed if it can't be monitore
 
 ## 3- Small Incremental changes should be continuously deployed to production
 
-Application features should always be developed incrementally preferably using [Endpoint Driven Development](https://alwaysdeployed.com/endpoint-driven-development), with each endpoint preferably controlled by a feature toggle.
+Application features should always be developed incrementally using [Endpoint Driven Development](https://alwaysdeployed.com/endpoint-driven-development), with each endpoint controlled by a feature toggle.
 
 Once an endpoints functionality is completely developed and the endpoint passes all endpoint tests it should be integrated into the master branch using [Trunk based development](https://trunkbaseddevelopment.com/).
 The new version of the master branch should immediatly be deployed to the secure production environment.
