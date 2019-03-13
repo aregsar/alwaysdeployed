@@ -55,18 +55,18 @@ itself to standard endpoint driven development principles.
 
 An endpoint request is a special case of an UI action, triggered by, navigating to a URL, clicking a link, submitting a form or clicking an button that posts an Ajax request to an endpoint.
 
-The development process for client side applications can be formalized under [Action Driven Development](https://alwaysdeployed.com/action-driven-development/) that is a superset of Endpoint Driven development, which is better suited to client side applications and SPAs, where each UI action representing a psudo endpoint.
+The development process for client side applications can be formalized under [Action Driven Development](https://alwaysdeployed.com/action-driven-development) that is a superset of Endpoint Driven development, which is better suited to client side applications and SPAs, where each UI action representing a psudo endpoint.
 
 ## Websocket endpoints
 
 Realtime WebSockets use a single endpoint to process channel\event requests  
 Therefore realtime endpoint development does not lend itself to standard endpoint driven development principles.
 So instead a psudo endpoint is defined based on the channel\event request message schema.
-The WebSocket development process can be formalized using [Schema Driven Development](https://alwaysdeployed.com/schema-driven-development/).
+The WebSocket development process can be formalized using [Schema Driven Development](https://alwaysdeployed.com/schema-driven-development).
 
 ## GraphQL endpoints
 
 GraphQL uses a single endpoint to process query\mutation requests.
 Therefore GrapQL endpoint development does not lend itself to standard endpoint driven development principles.
 So instead a psudo endpoint is defined based on the query\mutation request message schema.
-The GraphQL development process can be formalized using [Schema Driven Development](https://alwaysdeployed.com/schema-driven-development/).
+The GraphQL development process can be formalized using [Schema Driven Development](https://alwaysdeployed.com/schema-driven-development).
