@@ -1,10 +1,12 @@
 # Endpoint Driven Development
 
+Authored by: [Areg Sarkissian](https://aregsar.com/about)
+
 Endpoint Driven Development is a methodology of web application development that enables granular feature functionality to be continuously integrated into a production application.
 
 In Endpoint driven development an application is represented by a set of independant endpoints. Each endpoint represents a quantum of independant functionality that is aggregated with the rest of the endpoints to provide the full functionality of the application.
 
-The essence of endpoint driven development is that a user action triggers a request to an endpoint that performs some function and returns a response to a user. That chain of events can be encapsulated as an atomic unit of a feature and developed, tested and deployed independently. 
+The essence of endpoint driven development is that a user action triggers a request to an endpoint that performs some function and returns a response to a user. That chain of events can be encapsulated as an atomic unit of a feature and developed, tested and deployed independently.
 
 Furthermore the process of developing a feature that corresponds to an independant endpoint, from concept to production, meshes well with lean development practices and Kanban.
 
