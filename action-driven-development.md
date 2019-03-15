@@ -10,4 +10,4 @@ Furthermore the process of developing a feature that corresponds to an independa
 
 Client side application development patterns such a `Redux`, which has the concept of Actions that trigger state change and side effects map well to action driven development.
 
-> Note: The Action Driven Development formalization process for Websocket endpoints is a work in progress.
+> Note: The Action Driven Development formalization process is a work in progress.

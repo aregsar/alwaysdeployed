@@ -27,11 +27,9 @@ specific Http Verb.
 
 ## The principles of Endpoint Driven Development
 
-- A specific handler assoicated to single endpoint will respond
-to an Http request by producing a HttpResponse and possibly produce one or more
-side effects such as updating a database, sending an email, adding a job to a queue or sending a websocket notification.
+- Each endpoint will have an associated handler that will respond to a Http request by producing a Http response and will possibly produce one or more side effects such as updating a database, sending an email, adding a job to a queue or sending a websocket notification.
 
-- Each endpoint is verified and guarded by a set of endpoint tests that send Http requests to the specific endpoint and validate responses and side effects.
+- Each endpoint is verified by a set of endpoint tests that send Http requests to the specific endpoint and validate responses and side effects.
 
 - Each endpoint is developed and deployed independantly, optionally disabled
 by a feature toggle until the set of endpoints that represent the feature are all deployed.
@@ -67,6 +65,6 @@ The WebSocket development process can be formalized using [Schema Driven Develop
 ## GraphQL endpoints
 
 GraphQL uses a single endpoint to process query\mutation requests.
-Therefore GrapQL endpoint development does not lend itself to standard endpoint driven development principles.
+Therefore GraphQL endpoint development does not lend itself to standard endpoint driven development principles.
 
 The GraphQL development process can be formalized using [Schema Driven Development](https://alwaysdeployed.com/schema-driven-development) where a psudo-endpoint is defined based on the query\mutation request message schema.
