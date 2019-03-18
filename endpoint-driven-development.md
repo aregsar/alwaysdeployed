@@ -12,7 +12,7 @@ The essence of endpoint driven development can be summed up as follows:
 
 A user action triggers a request to an endpoint that performs some action and returns a response to the user. That chain of events can be encapsulated as an atomic unit of a feature and developed, tested and deployed independently.
 
-See how __Endpoint Driven Development__ can help you and your team provide more sustainable customer value faster [here](https://alwaysdeployed.com/tools)
+See how __Endpoint Driven Development__ can help you and your team provide more sustainable customer value faster [here](https://alwaysdeployed.com/tools).
 
 ## What constitutes an Endpoint?
 

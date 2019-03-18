@@ -10,7 +10,7 @@ The Always deployed Manifesto adops the principle of [No Estimates](https://ronj
 
 The Always deployed Manifesto also adops the principle of [Endpoint Driven Development](https://alwaysdeployed.com/endpoint-driven-development) to ensure that a deployed application is in a completed state at all times.
 
-See how __Always Deployed__ can help you and your team provide more sustainable customer value faster [here](https://alwaysdeployed.com/tools)
+See how __Always Deployed__ can help you and your team provide more sustainable customer value faster [here](https://alwaysdeployed.com/tools).
 
 Below are the three priciples of the Always Deployed manifesto:
 
