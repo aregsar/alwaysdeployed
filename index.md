@@ -6,9 +6,11 @@ The Always Deployed manifesto defines a process of web software development that
 
 Furthermore it helps make the development process transparent to all stakeholders by providing continuous observabilty into the state of the application, starting from day one.
 
-The Always deployed Manifesto adops the principle of [No Estimates](https://ronjeffries.com/xprog/articles/the-noestimates-movement/) to provide a real measure of development progress by allowing customers to literally see an application come to life and evolve before their eyes.
+The Always deployed Manifesto adops the principle of [No Estimates](https://ronjeffries.com/xprog/articles/the-noestimates-movement/) to provide a real measure of development progress, by allowing customers to literally see the progress of an application as it comes to life and evolves before their eyes.
 
 The Always deployed Manifesto also adops the principle of [Endpoint Driven Development](https://alwaysdeployed.com/endpoint-driven-development) to ensure that a deployed application is in a completed state at all times.
+
+See how __Always Deployed__ can help you and your team provide more sustainable customer value faster [here](https://alwaysdeployed.com/tools)
 
 Below are the three priciples of the Always Deployed manifesto:
 
@@ -24,7 +26,7 @@ The production deployed version of an application should include health check mo
 
 An Always Deployed application is not considerd deployed if it can't be monitored.
 
-## Small Incremental changes should be continuously deployed to production
+## Granular incremental changes should be continuously deployed to production
 
 Application features should always be developed and deployed incrementally using [Endpoint Driven Development](https://alwaysdeployed.com/endpoint-driven-development), with each deployed endpoint controlled by a feature toggle.
 
