@@ -26,7 +26,7 @@ The production deployed version of an application should include health check mo
 
 An Always Deployed application is not considerd deployed if it can't be monitored.
 
-## Granular incremental changes should be continuously deployed to production
+## Granular changes should be continuously deployed to production
 
 Application features should always be developed and deployed incrementally using [Endpoint Driven Development](https://alwaysdeployed.com/endpoint-driven-development), with each deployed endpoint controlled by a feature toggle.
 
