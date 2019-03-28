@@ -4,7 +4,7 @@ Authored by: [Areg Sarkissian](https://aregsar.com/about)
 
 Schema driven development is a development process that is related to [Endpoint Driven Development](https://alwaysdeployed.com/endpoint-driven-development) in which the URI of the endpoint is static and instead the schema of the request data determines the handler that generates the response and side effects of the request.
 
-Similar to [Endpoint Driven Development](https://alwaysdeployed.com/endpoint-driven-development), the essence of schema driven development is that a user action triggers a request that contains a message type or schema instance, message resolvers that handle the message perform some function and returns a response to a user. That chain of events can be encapsulated as an atomic unit of a feature and developed, tested and deployed independently.
+Similar to [Endpoint Driven Development](https://alwaysdeployed.com/endpoint-driven-development), the essence of schema driven development is that a user action triggers a request that contains a message type or schema instance, message resolvers handle the request message, perform some function and return a response to a user. That chain of events can be encapsulated as an atomic unit of a feature and developed, tested and deployed independently.
 
 Furthermore the process of developing a feature that corresponds to an independant message type or schema, from concept to production, meshes well with lean development practices and Kanban.
 

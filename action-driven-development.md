@@ -2,7 +2,7 @@
 
 Authored by: [Areg Sarkissian](https://aregsar.com/about)
 
-Actin driven development is a development process that is related to [Endpoint Driven Development](https://alwaysdeployed.com/endpoint-driven-development) with the fundemental premiss that a UI action or a auto-action such as a timer expiration triggers an action event. This action event in turn changes the application state and possibly causes side effects such as making an ajax request to a URI endpoint. Upon changing of the application state, the UI is re-rendered producing a UI response.
+Action driven development is a development process that is related to [Endpoint Driven Development](https://alwaysdeployed.com/endpoint-driven-development) with the fundemental premiss that a UI action or a auto-action such as a timer expiration triggers an action event. This action event in turn changes the application state and possibly causes side effects such as making an ajax request to a URI endpoint. Upon changing of the application state, the UI is re-rendered producing a UI response.
 
 Similar to [Endpoint Driven Development](https://alwaysdeployed.com/endpoint-driven-development), the essence of action driven development is that a user action triggers a event that performs some function and returns a response to a user. That chain of events can be encapsulated as an atomic unit of a feature and developed, tested and deployed independently.
 

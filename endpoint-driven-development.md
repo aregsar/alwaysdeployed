@@ -39,9 +39,9 @@ specific Http Verb.
 by a feature toggle until the set of endpoints that represent the feature are all deployed.
 
 - Once all endpoints of a feature are deployed the corresponding feature toggle
-for the feature can be removed. Feature toggles defined per feature, so multiple endpoints can be deployed under the same feature toggle.
+for the feature can be removed. Feature toggles are defined per feature, so multiple endpoints can be deployed under the same feature toggle.
 
-- Deployed endpoints are immuatble so any changes to an endpoint will result in a completely new version of the endpoint. The versions of the endpoint can be switched by an endpoint toggle. After the new version is deployed the endpoint toggle and the old version of the endpoint can be removed.
+- Deployed endpoints are immutable so any changes to an endpoint will result in a completely new version of the endpoint. The versions of the endpoint can be switched by an endpoint toggle. After the new version is deployed the endpoint toggle and the old version of the endpoint can be removed.
 
 - Client side Ajax requests to an endpoint are part of a separate endpoint request and not part of the reponse of another endpoint. So for example a request to an endpoint that returns a Html page is considered separate from the request to a different endpoint that an Ajax form on that page makes to submit the form.
 
@@ -58,7 +58,7 @@ Client side development is inherently more complex and does not lend itself to s
 
 The development process for client side applications can be formalized under [Action Driven Development](https://alwaysdeployed.com/action-driven-development) that is a superset of endpoint driven development better suited to developing client side applications, where each UI action corresponds to a psudo-endpoint.
 
-An endpoint request, is a special case of a UI action, that is triggered by navigating to a URL, clicking a link, submitting a form or clicking an button that posts an Ajax request to an endpoint.
+An endpoint request, is a special case of a UI action, that is triggered by navigating to a URL, clicking a link, submitting a form or clicking a button that posts an Ajax request to an endpoint.
 
 ## Websocket endpoints
 
