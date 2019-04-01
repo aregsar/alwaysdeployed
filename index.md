@@ -12,7 +12,7 @@ The Always deployed Manifesto also adops the principle of [Endpoint Driven Devel
 
 See how __Always Deployed__ can help you and your team provide more sustainable customer value faster [here](https://alwaysdeployed.com/tools).
 
-Below are the three priciples of the Always Deployed manifesto:
+Below are the three principles of the Always Deployed manifesto:
 
 ## Application code should be deployed to production from day one
 
